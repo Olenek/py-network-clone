@@ -1,0 +1,11 @@
+dj-database-url
+dj-static
+Django
+django-toolbelt
+djangorestframework
+gunicorn
+static3
+psycopg2-binary
+wheel
+Pillow
+whitenoise

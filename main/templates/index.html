@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static  %}
+
+{%  block css %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{%  block content %}
+<div id="jb">
+    <div id="jb1">
+        <div>
+            <h1 class="title"> MarinaAI</h1>
+            <p class="text">Сделано людьми для людей.</p>
+        </div>
+    </div>
+
+    <div id="jb2">
+        <div>
+            <p style="color: white">MarinaAI - это бот придуманный ля того чтобы облегчить жизнь сотрудникам *placeholder*
+                создавать заказ командировки. Вы можете помочь нам развивать MarinaAI всего лишь ...</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col menu">
+            <a style=" text-decoration: none;color: black" href="{% url 'authentication:register' %}">
+                <h3>Зарегестрируйтесь</h3>
+                <hr>
+                <p>Создайте аккаунт, ответив на несколько простых вопросов. </p>
+            </a>
+        </div>
+        <div style="background-color: #141414; color: #ecdb04; "class="col menu">
+            <h3>Если у вас уже есть аккаунт то можете сразу написать Марине</h3>
+        </div>
+        <div class="col menu">
+            <a style=" text-decoration: none;color: black" href="/dialogues">
+                <h3>Напишите Марине</h3>
+                <hr>
+                <p>Закажите командировку всего за минуту</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{%  block js %}
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
